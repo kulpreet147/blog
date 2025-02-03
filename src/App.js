@@ -4,15 +4,17 @@ import Users from "./Users";
 import Users_class from "./Users_class";
 import ClickAndFunctions from "./ClickAndFunctions";
 import ClickAndFunctionsWithState from "./Click&FunctionWithState";
+import Togle from "./Toggle_button";
+import { useState } from "react";
+import Toggle_button from "./Toggle_button";
+import React_Form from "./ReactForm";
 
 function App() {
+  const [show, setshow] = useState(true);
+
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-      <Users />
-      <Users_class/>
-      <ClickAndFunctions/>
-      <ClickAndFunctionsWithState/>
+     <React_Form/>
     </div>
   );
 }
